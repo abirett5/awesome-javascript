@@ -4,6 +4,7 @@
 // Creating Print Function
 let print = console.log.bind(document);
 
+//------------------------------------------------
 
 
 //-> 1. Array Concatenation
@@ -35,3 +36,14 @@ const obj2 = {b: 2};
 const merged = {...obj1, ...obj2};
 
 print(merged);
+
+
+//-> 5. Function Arguments
+function addNumbers(a, b, c) {
+    return a + b + c;
+}
+
+const numbers = [1, 2, 3];
+const sum = addNumbers(...numbers);
+
+print(sum);
